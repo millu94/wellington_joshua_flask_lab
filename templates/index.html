@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title>{{ title }} - Record Shop</title>
+    </head>
+    <body>
+        <h1>Records Sold</h1>
+        {% for order in orders %}
+        <div>
+            <p>{{ order.record_name }}: <b>{{ order.total_price }}</b></p>
+        </div>
+        {% endfor %}
+    </body>
+</html>
